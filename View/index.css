@@ -1,0 +1,177 @@
+html {}
+
+body {
+font-family: 'Electrolize', sans-serif;
+  background: #131418;
+  color: #999;
+  text-align: center;
+  font-size: 15px;
+}
+
+.submit {
+  padding: 2% 4%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.radios {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.file-text>h6 {
+  font-size: 15px;
+}
+
+
+.base-frame {
+  /*  border-radius: 30px;*/
+  border: 3px solid #fff;
+  width: 50%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  text-align: center;
+}
+
+.upload-files {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.file-lbl {
+  /*border-radius: 10px;*/
+  width: 32%;
+  border: 1px solid #fff;
+  padding: 3%;
+}
+
+
+.file-lbl:hover {
+  transition: 0.5s;
+  opacity: 0.7;
+  background-color: white;
+  color: black;
+  padding: 4%;
+}
+
+.file-text {
+  width: 50%
+}
+
+.file-up {
+  width: 50%;
+  position: relative;
+}
+
+
+.upl-file {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left:0;
+  opacity: 0;
+  display: flex;
+  flex-direction: column-reverse;
+  align-content: center;
+}
+
+form>div {
+  align-items: baseline;
+  display: flex;
+  width: 70%;
+  margin: 0px auto;
+  justify-content: center;
+}
+
+.send {
+  flex-direction: column;
+  align-items: center
+}
+
+.result {
+  width: 80%;
+  color: white;
+  font-style: italic;
+  border-color: white;
+
+}
+
+.iframe {
+  /*  border-radius: 30px;*/
+  margin: 3% auto;
+  display: flex;
+  background: #999;
+/**
+
+**/
+label {
+  margin-right: 15px;
+  line-height: 32px;
+  width: 77%;
+}
+
+input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  /*border-radius: 50%;*/
+  width: 16px;
+  height: 16px;
+  border: 2px solid #999;
+  margin-right:   5px;
+  position: relative;
+  top: 4px;
+}
+
+input:checked {
+  border: 6px solid white;
+}
+
+button,
+legend {
+  color: white;
+  background-color: black;
+  padding: 5px 10px;
+  border-radius: 0;
+  border: 0;
+  font-size: 14px;
+}
+
+button:hover,
+button:focus {
+  color: white;
+}
+
+button:active {
+  background-color: white;
+  color: black;
+  outline: 1px solid black;
+}
+
+select {
+
+   -webkit-appearance: none;
+   -moz-appearance: none;
+   appearance: none;       /* Remove default arrow */
+   background-color: #131418;
+   color: #999;
+   width: 40%;
+   padding:5px;
+   border: 3px;
+   border-style: solid;
+   border-color: #999;
+   font-family: 'Electrolize', sans-serif;
+   font-size: 15px;
+}

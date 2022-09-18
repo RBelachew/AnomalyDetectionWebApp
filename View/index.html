@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="index.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Electrolize&display=swap" rel="stylesheet">
+  <title>Anomaly Detection Server</title>
+  <link rel="stylesheet" href="./Anomaly Detection Server_files/index.css">
+</head>
+
+<body>
+  <div class="base-frame">
+    <div class="title">
+      <h1>-Anomaly Detection Server-</h1>
+      <h2 id="nme"></h2>
+    </div>
+    <div class="upload-files">
+      <form action="/detect" method="post" enctype="multipart/form-data"  target="result">
+        <!--choose an algorithm and 2 files and declarate an iframe for output -->
+
+        <div class="select">
+          <div class="file-text">
+            <h6>Choose an algorithm:</h6>
+
+          </div>
+          <select name="algos" id="algos">
+            <option value="regression">Regression Line</option>
+            <option value="hybrid">Hybrid Algorithm</option>
+
+          </select>
+
+        </div>
+
+
+
+        <div class="proper">
+          <div class="file-text">
+            <h6>Proper flight CSV:</h6>
+
+          </div>
+          <div class="file-up">
+            <input type="file" name="normalCsv">
+          </div>
+        </div>
+
+        <div class="anomal">
+          <div class="file-text">
+            <h6>Abnormal flight CSV:</h6>
+          </div>
+          <div class="file-up">
+            <input  type="file" name="anomalCsv">
+          </div>
+        </div>
+
+        <div class="send">
+          <label for="send-file" class="file-lbl">Submit</label>
+          <input id="send-file" class="upl-file" type="submit" value="שלח קובץ">
+        </div>
+
+    <div class="result">
+      <iframe id="iframe" class="iframe" name="result" width="90%" height="400">
+
+      </iframe>
+
+      </form>
+
+    </div>
+  </div>
+
+</body>
+</html>
